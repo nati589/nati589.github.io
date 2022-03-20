@@ -4,6 +4,7 @@
   max-width: 100%;
   /* overflow: hidden; */
   position: relative;
+  list-style: none;
 }
 /* Variables */
 :root {
@@ -19,6 +20,10 @@
   --offwhite-color: #f5f5f5;
   --orange-color: rgba(230, 110, 46, 1);
   --lighter-orange-color: rgba(230, 110, 46, 0.8);
+  --text: white;
+  --logo: white;
+  --nav: rgba(255, 255, 255, 0.726);
+  --background: transparent;
   --font-main: Bree Serif;
   --font-quote: Raleway;
   --font-secondary: Lato;
