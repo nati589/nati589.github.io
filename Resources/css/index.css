@@ -207,6 +207,14 @@ footer li {
     z-index: 1;
     top: 0;
     right: 0;
+    transition: 1000ms ease-in background-color, 1000ms ease-in color;
+  }
+  .nav-scrolled {
+    --logo: #00adba;
+    --nav: rgba(56, 52, 52, 0.753);
+    --background: white;
+    transition: 1000ms ease-out background-color, 1000ms ease-out color;
+    /* background-color: white; */
   }
   header a {
     text-decoration: none;
@@ -215,9 +223,10 @@ footer li {
   .header-container {
     width: 90%;
     height: 100%;
-    color: white;
+    /* color: white; */
     background-color: var(--background);
     margin: 0 auto;
+    transition: 1000ms ease-out background-color, 1000ms ease-out color;
   }
   .inner-heading {
     display: flex;
@@ -243,8 +252,13 @@ footer li {
     width: 100%;
     height: 100%;
     font-weight: 900;
+    transition: 0.5s ease-in;
 
     /* text-align: center; */
+  }
+  #header-logo a:hover {
+    color: var(--orange-color);
+    transition: 0.8s ease-out;
   }
   #header-logo span {
     height: 100%;
@@ -260,8 +274,31 @@ footer li {
     padding: 0% 0% 0% 10%;
   }
   #header-nav a {
+    position: relative;
     padding-left: 7%;
     color: var(--nav);
+    font-weight: 300;
+    letter-spacing: 3px;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #header-nav a li::after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  #header-nav a li:hover::after {
+    width: 100%;
+  }
+  #header-nav a:hover li {
+    color: var(--primary-color);
   }
   /* #header-nav ul {
     width: 100%;
@@ -278,31 +315,41 @@ footer li {
     flex-basis: 30%;
     width: 100%;
     font-size: 1.35rem;
-    font-family: var(--font-quote);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
   #header-menu a {
     padding-left: 15%;
   }
   #header-menu a li {
-    border: 2px solid rgba(255, 255, 255, 0.726);
-    border-radius: 17px;
+    border: 1px solid var(--nav);
+    border-radius: 10px;
     color: var(--nav);
-    padding: 10% 20%;
+    padding: 5% 15%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  #header-menu a:hover li {
+    color: var(--text);
+    border: 1px solid var(--text);
+    transition: 0.5s ease-in-out;
   }
   #header-menu a:last-child {
     display: none;
   }
   #header-menu a:nth-child(2) li {
     background-color: rgb(42, 129, 141);
-    border: 2px solid transparent;
-    margin-left: 5%;
+    border: 1px solid rgb(42, 129, 141);
+    /* margin-left: 5%; */
+    color: white;
   }
-  .nav-scrolled {
-    /* --text: white; */
-    --logo: #00adba;
-    --nav: black;
-    --background: white;
+  #header-menu a:nth-child(2) li:hover {
+    color: var(--primary-color);
+    background-color: white;
+    transition: 0.5s ease-in-out;
   }
+
   /* Hero Section  */
   #herosection {
     background: rgb(249, 247, 246);
@@ -316,27 +363,51 @@ footer li {
     background-repeat: no-repeat;
     overflow: hidden;
     /* margin: 0%; */
-    height: 100vh;
-    text-align: center;
+    height: auto;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     /* position: fixed; */
     /* padding: 0%; */
     /* padding-bottom: 0%; */
   }
+  #herosection div {
+    padding: 8% 5%;
+    margin: 5%;
+  }
   #herosection div h1 {
-    padding: 25% 15% 0% 15%;
-    font-size: 3rem;
-    font-weight: 200;
+    font-size: 4.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1.5% 2% 2% 1.5%;
+    color: white;
   }
-  #herosection div h2 {
+  #herosection div p {
+    display: block;
     color: var(--lighter-text-color);
-    font-size: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 1% 2%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
-  #herosection button {
-    border: none;
-    color: var(--orange-color);
-    background-color: transparent;
-    font-size: 40px;
-    font-family: var(--font-main);
+  body #herosection button {
+    /* border: 3px solid var(--orange-color); */
+    border-radius: 5px;
+    padding: 0.3% 1.5% 0.5% 1.5%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 2%;
+    color: white;
+    background-color: rgb(223, 102, 37);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /* font-family: var(--font-main); */
+  }
+  #herosection button:hover {
+    color: white;
+    background-color: rgba(255, 89, 0, 0.863);
   }
   #testimony-container {
     display: flex;

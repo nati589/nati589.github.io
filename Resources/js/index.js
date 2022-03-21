@@ -1,17 +1,19 @@
- const headersection = document.querySelector("header");
- const sectionOne = document.querySelector("section#herosection");
+const headersection = document.querySelector('header');
+const sectionOne = document.querySelector('section#herosection');
 
- const sectionOneOptions = {};
+const sectionOneOptions = {
+    rootMargin: '-17%'
+};
 
- const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
-     entries.forEach(entry => {
+const sectionOneObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
         if(!entry.isIntersecting) {
-            headersection.classList.add("nav-scrolled");
+            headersection.classList.add('nav-scrolled');
         }
         else {
-            headersection.classList.remove("nav-scrolled");
+            headersection.classList.remove('nav-scrolled');
         }
-     });
- }, sectionOneOptions); 
+     })
+}, sectionOneOptions); 
 
- sectionOneObserver.observe(sectionOne);
+sectionOneObserver.observe(sectionOne);
