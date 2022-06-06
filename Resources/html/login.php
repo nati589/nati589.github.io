@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/signup.css">
     <link rel="stylesheet" href="../css/login.css">
     <script src="../js/signup.js"></script>
-    <base href="../../index.html" target="_self">
+    <base href="../../index.php" target="_self">
 
 </head>
 
@@ -28,14 +28,14 @@
                     <p>Welcome back fellow surveyee! </p>
                 </div>
                 <div>
-                    <form>
+                    <form method="post" action="Resources/php/login.php">
                         <label for="email">E-mail</label>
                         <div class="btn">
-                            <input type="email" name="email" id="email" class="textbox" placeholder=" username@domain.com" required> <br>  
+                            <input type="email" name="email" id="email" class="textbox" placeholder="username@domain.com" required> <br>
                         </div>
                         <label for="password">Password</label>
                         <div class="btn">
-                            <input type="password" name="password" id="password" class="textbox" placeholder=" Password" required> <br>  
+                            <input type="password" name="password" id="password" class="textbox" placeholder=" Password" required> <br>
                         </div>
                         <input type="checkbox" onclick="toggle()" id="showpassword"> Show Password
                         <div>
@@ -45,15 +45,19 @@
                     </form>
                     <p>
                         Don't have an account? Sign Up
-                        <a href="Resources/html/usersignup.html">
+                        <a href="Resources/html/usersignup.php">
                             User Account
-                        </a> 
+                        </a>
                         <br>
-                        <a href="Resources/html/orgsignup.html">
+                        <a href="Resources/html/orgsignup.php">
                             Organization Account
-                        </a> 
+                        </a>
+                        <br>
+                        <a href="Resources/html/orglogin.php">
+                            Organization Account Log in
+                        </a>
                     </p>
-                    
+
                 </div>
                 <div id="logo">
                     <a href="#">
@@ -61,10 +65,10 @@
                     </a>
                 </div>
                 <p>
-                    &copy; መጠይቅ Survey 2022 
+                    &copy; መጠይቅ Survey 2022
                 </p>
             </div>
-        </div>    
+        </div>
     </section>
 
 </body>

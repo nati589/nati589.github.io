@@ -13,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
     <link rel="stylesheet" href="Resources/css/index.css">
     <link rel="stylesheet" href="Resources/css/style.css">
-    <base href="index.html" target="_self">
+    <base href="index.php" target="_self">
 </head>
 
 <body>
@@ -25,58 +25,72 @@
                 </div>
                 <div id="header-nav">
                     <ul>
-                        <a href=""><li>Home</li></a>
-                        <a href="Resources/html/form.html"><li>BUILD</li></a>
-                        <a href="Resources/html/contact.html"><li>Contact</li></a>
-                        <a href="Resources/html/faq.html"><li>FAQ</li></a>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="Resources/html/pricing.php">
+                            <li>Pricing</li>
+                        </a>
+                        <a href="Resources/html/contact.php">
+                            <li>Contact</li>
+                        </a>
+                        <a href="Resources/html/faq.php">
+                            <li>FAQ</li>
+                        </a>
                     </ul>
                 </div>
                 <div id="header-menu">
                     <ul>
-                        <a href="Resources/html/login.html"><li>Login</li></a>
-                        <a href="Resources/html/usersignup.html"><li>Sign Up</li></a>
-                        <button onclick="hamBurger()"><li></li></button>
+                        <a href="Resources/html/login.php">
+                            <li>Login</li>
+                        </a>
+                        <a href="Resources/html/usersignup.php">
+                            <li>Sign Up</li>
+                        </a>
+                        <button onclick="hamBurger()">
+                            <li></li>
+                        </button>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <aside> 
+    <aside>
         <div id="asideinfo">
             <ul>
                 <li>
                     <a href="">Home</a>
                 </li>
                 <li>
-                    <a href="Resources/html/form.html">BUILD</a>
+                    <a href="Resources/html/pricing.php">Pricing</a>
                 </li>
                 <li>
-                    <a href="Resources/html/contact.html">Contact</a>
+                    <a href="Resources/html/contact.php">Contact</a>
                 </li>
                 <li>
-                    <a href="Resources/html/faq.html">FAQ</a>
+                    <a href="Resources/html/faq.php">FAQ</a>
                 </li>
             </ul>
         </div>
         <div id="signin">
             <ul>
                 <li>
-                    <a href="Resources/html/login.html">Login</a>
+                    <a href="Resources/html/login.php">Login</a>
                 </li>
                 <li>
-                    <a href="Resources/html/usersignup.html">Sign Up</a>
+                    <a href="Resources/html/usersignup.php">Sign Up</a>
                 </li>
             </ul>
         </div>
     </aside>
     <main class="ta-center">
-        <section id="herosection" >
+        <section id="herosection">
             <div>
-                <h1>Accelerate innovation <br>with   <em> data! </em> </h1>
+                <h1>Accelerate innovation <br>with <em> data! </em> </h1>
                 <p>
                     A survey platform where you get verified data for your business needs. <br> We also offer users rewards for filling out surveys.
                 </p>
-                <button>Get Started</button>
+                <a href="#accounts" class="herobutton">Get Started</a>
             </div>
         </section>
         <section id="benefits">
@@ -88,10 +102,11 @@
                     <p class="example">
                         Fill out all the required information, after that enjoy all the payments and rewards you want.
                     </p>
+
                 </div>
                 <div class="benefit example">
                     <img src="Resources/images/flexibility.jpg" alt="Man looking at watch">
-                   <h3>Flexibility</h3>
+                    <h3>Flexibility</h3>
                     <p class="example">
                         Fill out surveys and get paid
                         wherever and whenever you feel like it
@@ -115,27 +130,27 @@
         </section>
         <section id="testimonial" class="ta-center">
             <h2>What they say about us?</h2>
-            <div id="testimony_container"> 
+            <div id="testimony_container">
                 <div class="testimonybox example" id="t1">
                     <img src="Resources/images/user1.jpg" alt="">
                     <h3>
-                    Yohannes Kassa 
+                        Yohannes Kassa
                     </h3>
                     <q>
-                          A friend told me about the services available on mtk and I just had to see for myself if it was true. And I’m glad to say I am quite satisfied. 
+                        A friend told me about the services available on mtk and I just had to see for myself if it was true. And I’m glad to say I am quite satisfied.
                     </q>
                 </div>
                 <div class="testimonybox example" id="t2">
                     <img src="Resources/images/user3.jpg" alt="">
                     <h3>
-                        Yeabsira Haile 
+                        Yeabsira Haile
                     </h3>
                     <q>The surveys they send me are all based on things I know and honestly I really enjoy taking them. And the payment ain't too bad either!</q>
                 </div>
                 <div class="testimonybox example" id="t3">
                     <img src="Resources/images/user4.jpg" alt="">
                     <h3>
-                    Harry Feleke 
+                        Harry Feleke
                     </h3>
                     <q>
                         The fact that I'm getting all these rewards for just 5 minutes of my time is amazing!
@@ -144,12 +159,12 @@
                 <div class="testimonybox example" id="t4">
                     <img src="Resources/images/user2.jpg" alt="">
                     <h3>
-                    Eyonadab Asrat 
+                        Eyonadab Asrat
                     </h3>
                     <q>
-                         My company has been looking for a way to collect data on user reaction to sports wear and mtk is just what I’ve been looking for.   
+                        My company has been looking for a way to collect data on user reaction to sports wear and mtk is just what I’ve been looking for.
                     </q>
-                    
+
                 </div>
             </div>
             <button id="changebtn1" onclick="changeTestimony(1)" class="selectbtn"></button>
@@ -162,18 +177,19 @@
                 <h2>Start your journey with us now by signing up</h2>
             </div>
             <div id="account">
-                <a href="Resources/html/usersignup.html">
+                <a name="accounts" href="Resources/html/usersignup.php">
                     <div class="button">
-                       Individual Account
+                        Individual Account
                     </div>
-                </a> 
-                <a href="Resources/html/orgsignup.html">  
+                </a>
+                <a href="Resources/html/orgsignup.php">
                     <div class="button">
                         Organization Account
                     </div>
-                </a>                
+                </a>
             </div>
         </section>
+
     </main>
     <footer>
         <div class="ta-center">
@@ -181,7 +197,7 @@
                 <div class="foot">
                     <ul>
                         <li class="logo">
-                             mtk&reg;
+                            mtk&reg;
                         </li>
                         <li>
                             Accelerate innovation with data!
@@ -210,14 +226,15 @@
                     &copy; መጠይቅ Survey PLC 2022
                 </div>
                 <div id="foot-right">
-                    <a href="Resources/html/contact.html">Contact Us</a> |
+                    <a href="Resources/html/contact.php">Contact Us</a> |
                     <a href="#">Terms of Service</a> |
                     <a href="#">Privacy Policy</a>
                 </div>
             </div>
-    
+
         </div>
     </footer>
     <script src="Resources/js/index.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +15,9 @@
     <!-- <link rel="stylesheet" href="../css/contact.css"> -->
     <!-- <link rel="stylesheet" href="../css/faq.css"> -->
     <script src="../js/index.js"></script>
-    <base href="../../index.html" target="_self">
+    <base href="../../index.php" target="_self">
 </head>
+
 <body>
     <header class="nav-scrolled">
         <div class="header-container">
@@ -25,24 +27,38 @@
                 </div>
                 <div id="header-nav">
                     <ul>
-                        <a href=""><li>Home</li></a>
-                        <a href="Resources/html/form.html"><li>BUILD</li></a>
-                        <a href="Resources/html/contact.html"><li>Contact</li></a>
-                        <a href=""><li>FAQ</li></a>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="Resources/html/form.php">
+                            <li>BUILD</li>
+                        </a>
+                        <a href="Resources/html/contact.php">
+                            <li>Contact</li>
+                        </a>
+                        <a href="">
+                            <li>FAQ</li>
+                        </a>
                     </ul>
                 </div>
                 <div id="header-menu">
                     <ul>
-                        <a href="Resources/html/login.html"><li>Login</li></a>
-                        <a href="Resources/html/usersignup.html"><li>Sign Up</li></a>
-                        <button onclick="hamBurger()"><li></li></button>
+                        <a href="Resources/html/login.php">
+                            <li>Login</li>
+                        </a>
+                        <a href="Resources/html/usersignup.php">
+                            <li>Sign Up</li>
+                        </a>
+                        <button onclick="hamBurger()">
+                            <li></li>
+                        </button>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-    <main> 
+    <main>
         <section>
             <div id="container">
                 <details class="dropdown">
@@ -64,7 +80,7 @@
                         How is መጠይቅ different from other places where I can post surveys?
                     </summary>
                     With our form delivery platform, form fillers get access to all the possible forms from all over the country and companies reach relevant talent for every type of position. Unlike other sites that charge a fixed amount per
-                        form posting regardless of results. And you have complete flexibility—there are no contracts or long-term commitments.
+                    form posting regardless of results. And you have complete flexibility—there are no contracts or long-term commitments.
                 </details>
             </div>
         </section>
@@ -77,4 +93,5 @@
         </div>
     </footer>
 </body>
+
 </html>

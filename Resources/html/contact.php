@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="../css/contact.css">
     <script src="../js/index.js"></script>
     <!-- <script src="../js/formgenerator.js"></script> -->
-    <base href="../../index.html" target="_self">
+    <base href="../../index.php" target="_self">
 
-    
+
 </head>
 
 <body>
@@ -30,56 +30,70 @@
                 </div>
                 <div id="header-nav">
                     <ul>
-                        <a href=""><li>Home</li></a>
-                        <a href="Resources/html/form.html"><li>BUILD</li></a>
-                        <a href="Resources/html/contact.html"><li>Contact</li></a>
-                        <a href="Resources/html/faq.html"><li>FAQ</li></a>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="Resources/html/form.php">
+                            <li>BUILD</li>
+                        </a>
+                        <a href="Resources/html/contact.php">
+                            <li>Contact</li>
+                        </a>
+                        <a href="Resources/html/faq.php">
+                            <li>FAQ</li>
+                        </a>
                     </ul>
                 </div>
                 <div id="header-menu">
                     <ul>
-                        <a href="Resources/html/login.html"><li>Login</li></a>
-                        <a href="Resources/html/usersignup.html"><li>Sign Up</li></a>
-                        <button onclick="hamBurger()"><li></li></button>
+                        <a href="Resources/html/login.php">
+                            <li>Login</li>
+                        </a>
+                        <a href="Resources/html/usersignup.php">
+                            <li>Sign Up</li>
+                        </a>
+                        <button onclick="hamBurger()">
+                            <li></li>
+                        </button>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <aside> 
+    <aside>
         <div id="asideinfo">
             <ul>
                 <li>
                     <a href="">Home</a>
                 </li>
                 <li>
-                    <a href="Resources/html/form.html">BUILD</a>
+                    <a href="Resources/html/form.php">BUILD</a>
                 </li>
                 <li>
-                    <a href="Resources/html/contact.html">Contact</a>
+                    <a href="Resources/html/contact.php">Contact</a>
                 </li>
                 <li>
-                    <a href="Resources/html/faq.html">FAQ</a>
+                    <a href="Resources/html/faq.php">FAQ</a>
                 </li>
             </ul>
         </div>
         <div id="signin">
             <ul>
                 <li>
-                    <a href="Resources/html/login.html">Login</a>
+                    <a href="Resources/html/login.php">Login</a>
                 </li>
                 <li>
-                    <a href="Resources/html/usersignup.html">Sign Up</a>
+                    <a href="Resources/html/usersignup.php">Sign Up</a>
                 </li>
             </ul>
         </div>
     </aside>
     <main>
         <section id="contact-top">
-               <h1>Contact Us</h1>
-               <p>
-                    For further assistance or if you have any issues please contact us with the information provided below.
-               </p>
+            <h1>Contact Us</h1>
+            <p>
+                For further assistance or if you have any issues please contact us with the information provided below.
+            </p>
         </section>
         <section id="contactbox">
             <div id="contactinfo">
@@ -90,10 +104,10 @@
                     <div>
                         <h3>Address</h3>
                         <p>
-                            <address>
-                                1281 Bole Road, <br>
-                                Addis Ababa, Ethiopia <br>
-                            </address>
+                        <address>
+                            1281 Bole Road, <br>
+                            Addis Ababa, Ethiopia <br>
+                        </address>
                         </p>
                     </div>
                 </div>
@@ -108,7 +122,7 @@
                                 +(251)-94-665-0560
                             </p>
                         </a>
-                        
+
                     </div>
                 </div>
                 <div class="contact">
@@ -129,10 +143,10 @@
                 <form action="">
                     <h3>Send a Message</h3>
                     <div>
-                        <input type="textarea" name="fullname" id="fullname" class="textbox" placeholder="Full Name" required> 
+                        <input type="textarea" name="fullname" id="fullname" class="textbox" placeholder="Full Name" required>
                     </div>
                     <div>
-                        <input type="email" name="email" id="email" class="textbox" placeholder="E-mail" required> 
+                        <input type="email" name="email" id="email" class="textbox" placeholder="E-mail" required>
                     </div>
                     <br>
                     <div>
@@ -153,7 +167,7 @@
             </p>
         </div>
     </footer>
-    
+
 
 </body>
 
